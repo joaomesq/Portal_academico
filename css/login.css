@@ -1,0 +1,91 @@
+
+.login{
+	display: grid;
+	
+	padding: 8px;
+	margin: 70px 0;
+	width: 94%;
+	margin-left: 3%;
+}
+.logo_card_login img{
+	display: none;
+
+	width: 200px;
+	height: 100px;
+}
+.card_login{
+	width: 100%;
+	padding: 10px;
+}
+.card_login form,
+.card_login input{
+	width: 100%;
+}
+.card_login label{
+	margin: 10px 0 0 0;
+}
+.card_login input{
+	margin: 10px 0 0 0;
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #000;
+
+	font-size: 1.2em;
+}
+.card_login .forgwat{
+	text-align: right;
+}
+.card_login button{
+	width: 100%;
+	padding: 10px;
+	margin-top: 30px;
+
+	border: none;
+
+	background: rgba(0, 51, 102, 1.0);
+	color: #fff;
+	font-size: 1.2em;
+}
+
+/*RESPONSIVE*/
+/*LARGE DEVICE*/
+@media screen and (min-width: 768px){
+	.cabecalho h1{
+		display: none;
+	}
+
+	.login{
+		grid-template-columns: 1fr 1fr;
+		border: 1px solid #000;
+		border-radius: 4px;
+
+		width: 85%;
+		margin: 30px 7.5%;
+		padding: 0;
+	}
+	.login section{
+		height: 100%;
+		width: 100%;
+	}
+
+	.logo_card_login img{
+		display: unset;
+		padding: 0;
+		margin: 0;
+	}
+	.self{
+		padding: 10px  50px 0 50px;
+	}
+
+	.card_login{
+	}
+	.card_login form{
+		padding: 50px;
+	}
+	.void{
+		background: transparent url(../img/cha.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+}

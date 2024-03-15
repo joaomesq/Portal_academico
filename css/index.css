@@ -1,0 +1,67 @@
+.turmas{
+	display: grid;
+	grid-template-columns: 100%;
+
+	padding: 10px;
+}
+.turmas section{
+	padding: 10px;
+	margin: 15px 0 5px 0;
+
+	border-radius: 4px;
+}
+.turmas section a{
+	font-size: 1.6em;
+	color: #fff;
+}
+.turmas section a div{
+	text-align: center;
+	padding: 25% 0 25% 0;
+
+}
+.primeiro_ano{
+	background: transparent url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.segundo_ano{
+	background: transparent url(../img/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.terceiro_ano{
+	background: transparent url(../img/7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.ultimo_ano{
+	background: transparent url(../img/6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+footer{
+	margin-top: 10px;
+	padding: 40px;
+}
+
+/*
+RESPONSIVE
+LARGE DEVICES
+*/
+@media screen and (min-width:  768px){
+	.turmas{
+		grid-template-columns: 50% 50%;
+	}
+	.turmas section{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}

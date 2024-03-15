@@ -1,0 +1,162 @@
+*{
+	box-sizing: border-box;
+	padding: auto;
+	margin: auto;
+
+	font-family: Roboto;
+}
+body{
+	background: rgba(239, 242, 247, 1.0);
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+button{
+	cursor: pointer;
+}
+/*------------------*/
+
+/*Estilizando o cabecalho*/
+.cabecalho{
+	width: 100%;
+}
+.cabecalho section{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.cabecalho section h1{
+	margin-left: 0;
+}
+.cabecalho h1 img{
+	width: 200px;
+	height: 100px;
+}
+.cabecalho .btn_open {
+	border: none;
+	border-radius: 4px;
+	background: transparent;
+
+	margin: 5px 40px 0 0 ;
+}
+.cabecalho .btn_open img{
+	width: 35px;
+}
+
+.cabecalho h2{
+	font-size: 0.8em;
+	font-weight: 50;
+	text-align: right;
+	margin-right: 10px;
+
+}
+.cabecalho h2 span{
+	border: solid #f00 1px;
+	border-radius: 4px;
+	padding: 5px;
+}
+.span span{
+	border: solid rgba(0, 51, 102, 1.0) 1px;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.btn_sair{
+	display: none;
+	position: fixed;
+	top: 90%;
+	left: 90%;
+	cursor: pointer;
+
+	color: white;
+	background: #f00;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	right: 0;
+	
+	width: 50%;
+	height: 100%;
+	
+	padding: 10px;
+    margin-right: 0;
+	
+	color: #fff;
+	background: rgba(0, 51, 102, 1.0);
+}
+.modal nav ul{
+	text-align: left;
+	margin: 0;
+}
+.modal nav ul li{
+	display: block;
+	margin: 10px 0 0 0;
+
+	text-transform: uppercase;
+}
+.modal nav ul li a{
+	color: #fff;
+}
+.modal nav ul li:hover{
+	border-bottom: 2px solid #f00;
+}
+.modal .btn_close{
+	float: right;
+	border: none;
+	background-color: inherit;
+	color: #fff;
+	margin-left: 98%;
+	font-size: 1.4em;
+}
+
+/*Estilizando o Rodape*/
+.center{
+	text-align: center;
+}
+footer{
+	margin-top: 50px;
+	padding: 30px;
+}
+
+
+/*RESPONSIVIDADE*/
+/*LARGE DEVICES*/
+@media screen and (min-width: 768px){
+
+.modal{
+	display: unset;
+	position: unset;
+	color: #000;
+	background: none;
+}
+.modal nav ul{
+	margin-right: -20px;
+}
+.modal nav ul li{
+	display: inline-block;
+	margin: 5px;
+	text-transform: uppercase;
+}
+.modal nav ul li a{
+	color: #000;
+}
+.modal nav ul li:hover{
+	border-bottom: 1px solid #f00;
+	transform: translateY(-5px);
+	transition: 1s linear;
+}
+
+.btn_open, .btn_close{
+	display: none;
+}
+
+}
